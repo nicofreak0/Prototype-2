@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // keep the player in bounds
+        // keeps the player in bounds on the y and z
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+        // tells the player character to move horizontal at the speed set
         horizontalInput = Input.GetAxis("Horizontal"); 
         transform.Translate(Vector3.right * horizontalInput * speed);
     }
