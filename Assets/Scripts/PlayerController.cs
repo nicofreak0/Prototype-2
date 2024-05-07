@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //sets direction and speed as well as boundries with numbers
     public float horizontalInput;
-    public float speed = 1.0f;
+    public float speed = 0.5f;
     public float xRange = 10.0f;
+
+    public GameObject projectilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +32,11 @@ public class PlayerController : MonoBehaviour
         // tells the player character to move horizontal at the speed set
         horizontalInput = Input.GetAxis("Horizontal"); 
         transform.Translate(Vector3.right * horizontalInput * speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // launch a projectile from player
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
