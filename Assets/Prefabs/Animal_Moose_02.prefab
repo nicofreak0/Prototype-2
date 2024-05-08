@@ -777,6 +777,8 @@ GameObject:
   - component: {fileID: 1152143826616416923}
   - component: {fileID: 4585945513883235297}
   - component: {fileID: -4824024338167085856}
+  - component: {fileID: 4606180694648052510}
+  - component: {fileID: 4282672919357880653}
   m_Layer: 0
   m_Name: Animal_Moose_02
   m_TagString: Untagged
@@ -842,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae9e7af230fd814cb8c4fbb423a03bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 12
 --- !u!114 &-4824024338167085856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,6 +855,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 144229cfa0f1dfa40a913553a62c49a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &4606180694648052510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760329483270703087}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.16720864, y: 0.4417318, z: 0.40058088}
+  m_Center: {x: 0.0010169148, y: 0.23116586, z: 0.060229193}
+--- !u!114 &4282672919357880653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760329483270703087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f7dd09fe26194b86d36cad927faae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9207523360894075459

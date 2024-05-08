@@ -12,7 +12,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,8 +26,9 @@ public class DestroyOutOfBounds : MonoBehaviour
         //if the position of the object on z is less than the lower boundary it gets destroyed
         else if (transform.position.z < lowerBound)
         {
+            Debug.Log("Game Over.");
             Destroy(gameObject);
         }
-        
+
     }
 }

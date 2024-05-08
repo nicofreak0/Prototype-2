@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     //sets direction and speed as well as boundries with numbers
     public float horizontalInput;
-    public float speed = 0.5f;
-    public float xRange = 10.0f;
+    public float speed = 0.2f;
+    public float xRange = 15.0f;
 
     public GameObject projectilePrefab;
 
