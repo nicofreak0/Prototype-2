@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
+    // makes game object for dog and sets a fire delay for how often it can be spawned
     public GameObject dogPrefab;
     public float fireDelay = 3.0f;
 
@@ -13,7 +14,7 @@ public class PlayerControllerX : MonoBehaviour
 
         fireDelay -= 0.1F;
 
-        // On spacebar press, send dog
+        // On spacebar press, send dog and sets a fire delay for how often you can fire the dog
         if (Input.GetKeyDown(KeyCode.Space) && fireDelay <= 0.0f)
         {
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
